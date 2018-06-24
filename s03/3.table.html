@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Alert</title>
+    <title>Table</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 
@@ -17,26 +18,32 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <div class="contanier">
-        <div class="alert alert-success alert-dismissible">
-            Correct !!!
-            <button type="button" class="close" data-dismiss="alert">
-                &times;
-            </button>
-        </div>
-        <div class="alert alert-danger">
-            Incorrect !!!
-            <button type="button" class="close" data-dismiss="alert">
-                &times;
-            </button>
-        </div>
-        <div class="alert alert-info">
-            Information !!!
-            <button type="button" class="close" data-dismiss="alert">
-                &times;
-            </button>
-        </div>
-    </div>
+    <table class="table table-striped table-bordered table-hover table-dark text-danger">
+        <thead class="thead-dark">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>John</td>
+            <td>Smith</td>
+            <td>john@abc.com</td>
+        </tr>
+        <tr>
+            <td>Ryan</td>
+            <td>Kim</td>
+            <td>ryan@abc.com</td>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>Bonds</td>
+            <td>james@abc.com</td>
+        </tr>
+    </table>
 </body>
+
 </html>
