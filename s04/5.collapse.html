@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,19 +18,47 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="container">
         <div>
             <h1>Basic Collapsible</h1>
 
-            <button class="btn btn-primary"
-            data-target="#demo"
-            data-toggle="collapse"
-            >Click Me</button>
+            <button class="btn btn-primary" data-target="#demo" data-toggle="collapse">Click Me</button>
 
             <div id="demo" class="collapse">Ex eu id culpa labore aliqua enim non enim occaecat ipsum veniam irure.</div>
         </div>
-    </div>
-    
+        <div id="accordian">
+            <h1>Accordian</h1>
+            <div class="card">
+
+                <a href="" class="card-link" data-toggle="collapse" data-target="#collapseOne">
+                    <div class="card-header">
+                        Group Item 1
+                    </div>
+                </a>
+
+                <div id="collapseOne" class="collapse" data-parent="#accordian">
+                    <div class="card-body">
+                        Tempor et eu duis minim culpa cupidatat ullamco id aliquip eu.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <a href="" class="card-link" data-toggle="collapse" data-target="#collapseTwo">
+                    <div class="card-header">
+                        Group Item 2
+                    </div>
+                </a>
+
+                <div id="collapseTwo" class="collapse" data-parent="#accordian">
+                    <div class="card-body">
+                        Tempor et eu duis minim culpa cupidatat ullamco id aliquip eu.
+                    </div>
+                </div>
+            </div>
+        </div>
+
 </body>
+
 </html>
