@@ -20,12 +20,19 @@
 <body>
     <div class="container">
         <h1>Welcome !</h1>
-
+        <h1 id="display"></h1>
         <button class="btn btn-primary" onclick="alert('hello')">Click Me!</button>
-        <button class="btn btn-warning" onclick="showalert()">Click Me!</button>
+        <button class="btn btn-success" onclick="showalert()">Click Me 2</button>
+        <button class="btn btn-warning" onclick="showOnDisplay()">Click Me 3</button>
     </div>
+
     <script>
-    
+    function showalert(){
+        alert('He + 110 just kidding, it is a llo!');
+    }
+    function showOnDisplay(){
+        document.querySelector('#display').innerHTML = "Hello, Jason";
+    }
     </script>
 </body>
 </html>
