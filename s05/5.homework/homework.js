@@ -1,20 +1,20 @@
-var cs31task;
+var task;
 (function (cs31task) {
     var tblContact = document.querySelector('#tblContact');
     var frmContact = document.querySelector('#frmContact');
-    var txtFirstName = document.querySelector('#txtFirstName');
-    var txtLastName = document.querySelector('#txtLastName');
-    var txtEmail = document.querySelector('#txtEmail');
-    var txtAdress = document.querySelector('#txtAdress');
-    var txtPhone = document.querySelector('#txtPhone');
-    var txtState = document.querySelector('#txtState');
+    var txtCourse = document.querySelector('#txtCourse');
+    var txtAssignment1 = document.querySelector('#txtAssignment1');
+    var txtAssignment2 = document.querySelector('#txtAssignment2');
+    var txtAssignment3 = document.querySelector('#txtAssignment3');
+    var txtAssignment4 = document.querySelector('#txtAssignment4');
+    var txtAssignment5 = document.querySelector('#txtAssignment5');
     frmContact.onsubmit = function () {
-        var firstname = txtFirstName.value;
-        var LastName = txtLastName.value;
-        var Email = txtEmail.value;
-        var Adress = txtAdress.value;
-        var Phone = txtPhone.value;
-        var State = txtState.value;
+        var Course = txtCourse.value;
+        var Assignment1 = Assignment1.value;
+        var Assignment2 = txtAssignment2.value;
+        var Assignment3 = txtAssignment3.value;
+        var Assignment4 = txtAssignment4.value;
+        var Assignment5 = txtAssignment5.value;
         var row = tblContact.insertRow();
         var cell = row.insertCell();
         cell.innerHTML = firstname;

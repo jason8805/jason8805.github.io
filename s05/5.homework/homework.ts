@@ -1,35 +1,35 @@
-namespace cs31task{
+namespace TAE_SCHOOLtask{
     let tblContact = document.querySelector('#tblContact') as HTMLTableElement;
     let frmContact = document.querySelector('#frmContact') as HTMLFormElement;
-    let  txtFirstName = document.querySelector('#txtFirstName') as HTMLInputElement;
-    let  txtLastName = document.querySelector('#txtLastName') as HTMLInputElement;
-    let  txtEmail = document.querySelector('#txtEmail') as HTMLInputElement;
-    let  txtAdress = document.querySelector('#txtAdress') as HTMLInputElement;
-    let  txtPhone = document.querySelector('#txtPhone') as HTMLInputElement;
-    let  txtState = document.querySelector('#txtState') as HTMLInputElement;
+    let  txtCourse = document.querySelector('#txtCourse') as HTMLInputElement;
+    let  txtAssignment1 = document.querySelector('#txtAssignment1') as HTMLInputElement;
+    let  txtAssignment2 = document.querySelector('#txtAssignment2') as HTMLInputElement;
+    let  txtAssignment3 = document.querySelector('#txtAssignment3') as HTMLInputElement;
+    let  txtAssignment4 = document.querySelector('#txtAssignment4') as HTMLInputElement;
+    let  txtAssignment5 = document.querySelector('#txtAssignment5') as HTMLInputElement;
 
 
     frmContact.onsubmit = () => {
-        let firstname = txtFirstName.value;
-        let LastName = txtLastName.value;
-        let Email = txtEmail.value;
-        let Adress = txtAdress.value;
-        let Phone = txtPhone.value;
-        let State = txtState.value;
+        let Course = txtCourse.value;
+        let Assignment1 = txtAssignment1.value;
+        let Assignment2 = txtAssignment2.value;
+        let Assignment3 = txtAssignment3.value;
+        let Assignment4 = txtAssignment4.value;
+        let Assignment5 = txtAssignment5.value;
     
         let row = tblContact.insertRow()
         let cell = row.insertCell()
-        cell.innerHTML = firstname;
+        cell.innerHTML = Course;
         cell = row.insertCell()
-        cell.innerHTML = LastName;
+        cell.innerHTML = Assignment1;
         cell = row.insertCell()
-        cell.innerHTML = Email;
+        cell.innerHTML = Assignment2;
         cell = row.insertCell()
-        cell.innerHTML = Adress;
+        cell.innerHTML = Assignment3;
         cell = row.insertCell()
-        cell.innerHTML = Phone;
+        cell.innerHTML = Assignment4;
         cell = row.insertCell()
-        cell.innerHTML = State;
+        cell.innerHTML = Assignment5;
         cell = row.insertCell()
 
 
